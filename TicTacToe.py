@@ -2,7 +2,7 @@
 #Tic-Tac-Toe
 #Tonatiuh Gonzalez
 
-from colored import fg, bg, attr                #Library to print colored text
+#from colored import fg, bg, attr                #Library to print colored text
 
 def Create_Board():
     board = []                                  #Creates an empty list
@@ -20,7 +20,7 @@ def Display_Board(board):
     print()
 
 def main():
-    print ('%s Hello World !!! %s' % (fg(1), attr(0)))
+    #print ('%s Good Luck! %s' % (fg(1), attr(0)))
     player = next_player("")                        #Start game 
     board = Create_Board()                          #Call Create_Board() and assign a value to it, so it can be used as a parameter
     while not (draw(board) or winner(board)):       #While there is not a draw nor a winner
